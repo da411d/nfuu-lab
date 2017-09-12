@@ -1,0 +1,31 @@
+<!DOCTYPE FLOWCHART>
+<algorithm>
+  <branch>
+    <io vars="y,a,b,f,f1,f2"/>
+    <ou vars="&quot;Введіть значення&quot;"/>
+    <io vars="y"/>
+    <if cond="y&lt;0.15 || y>1.5">
+      <branch>
+        <ou vars="&quot;Помилка&quot;"/>
+        <if cond="y &lt; 0.15">
+          <branch>
+            <ou vars="&quot;Лямбда не може бути меншою за 0.15&quot; "/>
+          </branch>
+          <branch>
+            <ou vars="&quot;Лямбда не може бути бiльшою за 1.5&quot;"/>
+          </branch>
+        </if>
+      </branch>
+      <branch>
+        <io vars="a,b"/>
+        <assign dest="f1" src="pow(a,3) + pow(y,3)"/>
+        <assign dest="f1" src="pow(f1, 1/3)"/>
+        <assign dest="f2" src="tan(b*y)"/>
+        <assign dest="f2" src="pow(f2, 3)"/>
+        <assign dest="f2" src="f2 + 1.6"/>
+        <assign dest="f" src="f1/f2"/>
+        <ou vars="&quot;Результат виконання обчислення: f(x, y, z) = &quot;,f"/>
+      </branch>
+    </if>
+  </branch>
+</algorithm>

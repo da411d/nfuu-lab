@@ -1,0 +1,41 @@
+<!DOCTYPE FLOWCHART>
+<algorithm>
+  <branch>
+    <io vars="x,y"/>
+    <if cond="x&lt;-5 ||x>5">
+      <branch>
+        <ou vars="Помилка!"/>
+      </branch>
+      <branch>
+        <if cond="fabs(x) &lt;= 2">
+          <branch>
+            <assign src="sqr(sin(x)) + 3*sin(M_PI_4*4)" dest="y"/>
+          </branch>
+          <branch>
+            <if cond="2 &lt;= fabs(x) &amp;&amp; fabs(x) &lt;= 3">
+              <branch>
+                <assign src="11" dest="y"/>
+              </branch>
+              <branch>
+                <if cond="3&lt;x &amp;&amp; x&lt;4">
+                  <branch>
+                    <assign src="17 - 2*x" dest="y"/>
+                  </branch>
+                  <branch>
+                    <if cond="x >= 4">
+                      <branch>
+                        <assign src="2.5*x" dest="y"/>
+                      </branch>
+                      <branch/>
+                    </if>
+                  </branch>
+                </if>
+              </branch>
+            </if>
+          </branch>
+        </if>
+      </branch>
+    </if>
+    <ou vars="y"/>
+  </branch>
+</algorithm>

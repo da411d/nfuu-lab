@@ -1,0 +1,11 @@
+//«береженн€ масиву структур у файл
+void SaveToFile(char* path, Employee* mas, int count)
+{
+	ofstream toFile(path);
+	for(int i=0; i<count; i++)
+	{
+		toFile<<mas[i].surname<<" "
+			<<mas[i].name<<" "<<mas[i].age<<endl;
+	}
+	toFile.close();
+}
