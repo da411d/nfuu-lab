@@ -16,6 +16,4 @@ summary(data)
 plot(data[13])
 
 #Фільтрування
-data[data$State == 'AZ', ]
-data[data$Emergency.Services == 'No', ]
-
+data[data$State=='AZ' & data$Emergency.Services=='No', ]
