@@ -1,6 +1,6 @@
-#include "Solution.h"
+ï»¿#include "Solution.h"
 #pragma once
-namespace Ïðîåêò1 {
+namespace LAB1 {
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -56,7 +56,7 @@ namespace Ïðîåêò1 {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(117, 30);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"ÎÁ×ÈÑËÈÒÈ";
+			this->button1->Text = L"ÐžÐ‘Ð§Ð˜Ð¡Ð›Ð˜Ð¢Ð˜";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			this->button1->MouseEnter += gcnew System::EventHandler(this, &MyForm::button1_MouseEnter);
@@ -71,7 +71,7 @@ namespace Ïðîåêò1 {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(282, 20);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Ïðîãà äëÿ îá÷èñëåííÿ ð³âíÿííÿ";
+			this->label1->Text = L"ÐŸÑ€Ð¾Ð³Ð° Ð´Ð»Ñ Ð¾Ð±Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ Ñ€Ñ–Ð²Ð½ÑÐ½Ð½Ñ";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// xx
@@ -206,7 +206,7 @@ namespace Ïðîåêò1 {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
-			this->Text = L"Îá÷èñëèòè";
+			this->Text = L"ÐžÐ±Ñ‡Ð¸ÑÐ»Ð¸Ñ‚Ð¸";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();

@@ -9,6 +9,6 @@ void Main()
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	Проект1::MyForm form;
+	LAB1::MyForm form;
 	Application::Run(%form);
 }
