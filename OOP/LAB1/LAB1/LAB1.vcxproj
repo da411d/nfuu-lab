@@ -27,6 +27,11 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B78FA337-088B-403C-BA13-7624E168FA5C}</ProjectGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>

@@ -8,4 +8,5 @@ public:
         double fa(int n);        // Обчислення факторіалу
         double geta() {return a;}
         double getb() {return b;}
+		double round(double, int);
 };

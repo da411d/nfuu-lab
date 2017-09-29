@@ -29,6 +29,8 @@ namespace LAB1 {
 	private: System::Windows::Forms::TextBox^  bb;
 
 	private: System::Windows::Forms::Label^  label6;
+	private: System::Windows::Forms::Label^  lines;
+
 	protected: 
 	private: System::ComponentModel::Container ^components;
 
@@ -46,6 +48,7 @@ namespace LAB1 {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->bb = (gcnew System::Windows::Forms::TextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->lines = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -82,7 +85,7 @@ namespace LAB1 {
 			this->xx->Location = System::Drawing::Point(35, 39);
 			this->xx->MaxLength = 10;
 			this->xx->Name = L"xx";
-			this->xx->Size = System::Drawing::Size(152, 26);
+			this->xx->Size = System::Drawing::Size(194, 26);
 			this->xx->TabIndex = 2;
 			this->xx->Text = L"0";
 			this->xx->TextChanged += gcnew System::EventHandler(this, &MyForm::xx_TextChanged);
@@ -94,7 +97,7 @@ namespace LAB1 {
 			this->yy->ImeMode = System::Windows::Forms::ImeMode::Alpha;
 			this->yy->Location = System::Drawing::Point(35, 71);
 			this->yy->Name = L"yy";
-			this->yy->Size = System::Drawing::Size(152, 26);
+			this->yy->Size = System::Drawing::Size(194, 26);
 			this->yy->TabIndex = 3;
 			this->yy->Text = L"0";
 			this->yy->TextChanged += gcnew System::EventHandler(this, &MyForm::yy_TextChanged);
@@ -106,7 +109,7 @@ namespace LAB1 {
 			this->zz->ImeMode = System::Windows::Forms::ImeMode::Alpha;
 			this->zz->Location = System::Drawing::Point(35, 103);
 			this->zz->Name = L"zz";
-			this->zz->Size = System::Drawing::Size(152, 26);
+			this->zz->Size = System::Drawing::Size(194, 26);
 			this->zz->TabIndex = 4;
 			this->zz->Text = L"0";
 			this->zz->TextChanged += gcnew System::EventHandler(this, &MyForm::zz_TextChanged);
@@ -151,7 +154,7 @@ namespace LAB1 {
 			this->aa->ImeMode = System::Windows::Forms::ImeMode::Alpha;
 			this->aa->Location = System::Drawing::Point(35, 206);
 			this->aa->Name = L"aa";
-			this->aa->Size = System::Drawing::Size(152, 26);
+			this->aa->Size = System::Drawing::Size(194, 26);
 			this->aa->TabIndex = 4;
 			this->aa->Text = L"-";
 			// 
@@ -173,7 +176,7 @@ namespace LAB1 {
 			this->bb->ImeMode = System::Windows::Forms::ImeMode::Alpha;
 			this->bb->Location = System::Drawing::Point(35, 238);
 			this->bb->Name = L"bb";
-			this->bb->Size = System::Drawing::Size(152, 26);
+			this->bb->Size = System::Drawing::Size(194, 26);
 			this->bb->TabIndex = 4;
 			this->bb->Text = L"-";
 			// 
@@ -188,11 +191,23 @@ namespace LAB1 {
 			this->label6->TabIndex = 5;
 			this->label6->Text = L"B";
 			// 
+			// lines
+			// 
+			this->lines->AutoSize = true;
+			this->lines->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(204)));
+			this->lines->Location = System::Drawing::Point(293, 39);
+			this->lines->Name = L"lines";
+			this->lines->Size = System::Drawing::Size(0, 20);
+			this->lines->TabIndex = 6;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(304, 491);
+			this->ClientSize = System::Drawing::Size(467, 491);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->lines);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
@@ -204,7 +219,6 @@ namespace LAB1 {
 			this->Controls->Add(this->yy);
 			this->Controls->Add(this->xx);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
 			this->Text = L"Обчислити";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -236,14 +250,27 @@ namespace LAB1 {
 		if(zz->Text->Length){
 			z = System::Convert::ToDouble(zz->Text);
 		}else{z = 0;}
-			Solution solution;
-			solution.Fn_b(x, y, z);
-			solution.Fn_a(x, y, z);
-			aa->Text = solution.geta()+"";
-			if(aa->Text == "NaN")aa->Text = "-";
-			bb->Text = solution.getb()+"";
-			if(bb->Text == "NaN")bb->Text = "-";
-		
+
+		Solution solution;
+		solution.Fn_b(x, y, z);
+		solution.Fn_a(x, y, z);
+		aa->Text = solution.geta()+"";
+		if(aa->Text == "NaN")aa->Text = "-";
+		bb->Text = solution.getb()+"";
+		if(bb->Text == "NaN")bb->Text = "-";
+
+		double 
+			_y = 0.47 * 5.,
+			_z = -1.32 * 0.5;
+		lines->Text = L"";
+		for(double _x = -1; _x<=1; _x+=0.2){
+			solution.Fn_b(_x, _y, _z);
+			solution.Fn_a(_x, _y, _z);
+			lines->Text += 
+				solution.round(_x, 1) + "   " + 
+				solution.round(solution.geta(), 3) + "   " + 
+				solution.round(solution.getb(), 3) + "   \n";
+		}
 	}
 	private: System::Void xx_TextChanged(System::Object^  sender, System::EventArgs^  e) {button1_Click(sender, e);}
 	private: System::Void yy_TextChanged(System::Object^  sender, System::EventArgs^  e) {button1_Click(sender, e);}

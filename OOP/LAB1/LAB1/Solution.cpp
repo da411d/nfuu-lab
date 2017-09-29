@@ -3,8 +3,6 @@
 #include "Math.h"
 using namespace std;
 
-//Solution::Solution(void){}
-
 // Обчислення функції b[x,y,z]
 void Solution::Fn_b(double x, double y, double z){
         double b1 = (x*x) + (z*z)/pow(tan(pow(fabs(x), 0.3)), 2);
@@ -24,4 +22,7 @@ double Solution::fa(int n){
         double f=1;
         if(n > 1)for(int i=2; i<=n; i++)f*=i;
         return f;
+}
+double Solution::round(double x, int n){
+        return floor(x*pow(10, n)+0.5)/pow(10, n);
 }
