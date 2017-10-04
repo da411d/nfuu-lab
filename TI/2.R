@@ -1,2 +1,21 @@
 cat("\014")
 library(prob)
+
+cat("-=( 1 )=-\n")
+  L <- rep(c("Р", "О", "А", "П"), times=c(2, 1, 4, 3))
+  M <- urnsamples(L, size=4, replace = FALSE, ordered = TRUE)
+  N <- probspace(M)
+  O <- Prob(N, isin(N, c("П", "А", "Р", "А"), ordered = TRUE))
+  cat("\t", "П->А->Р->А = ", O, "\n")
+  cat("\n")
+  
+
+cat("-=( 2 )=-\n")
+  K <- rolldie(2, makespace = TRUE)
+  A <- Prob(subset(K, X1+X2 == (5+2)))
+  B <- Prob(subset(K, X1+X2 < (5+2)))
+  C <- Prob(subset(K, X1+X2 > (5+2)))
+  cat("\t", "SUM = 7:", A, "\n")
+  cat("\t", "SUM < 7:", B, "\n")
+  cat("\t", "SUM > 7:", C, "\n")
+  cat("\n")
