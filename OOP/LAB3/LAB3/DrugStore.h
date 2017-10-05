@@ -2,18 +2,16 @@
 #include "Drug.h"
 #include <iostream>
 using namespace std;
-class Drugs
-{
+class DrugStore{
 public:
-	Drugs(void);
-	~Drugs(void);
+	DrugStore(void);
+	~DrugStore(void);
 	int getSum(void);
 	void addItem(char*);
 	void addItem(char*, int);
-	//void getItem(int, Drug &);
+	void addItem(char*, int, int);
 	void print(void);
 
-private:
 	int current;
-	Drug* list[1024];
+	Drug list[1024];
 };

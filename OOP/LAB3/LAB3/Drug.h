@@ -2,8 +2,10 @@
 class Drug
 {
 public:
+	Drug(void);
 	Drug(char*);
 	Drug(char*, int);
+	Drug(char*, int, int);
 	~Drug(void);
 	int getCount(void);
 	int getPrice(void);

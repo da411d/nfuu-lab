@@ -3,9 +3,9 @@
 using namespace std;
 
 
-Drug::Drug(char* n, int p){
-	this->name = n;
-	this->price = p;
+Drug::Drug(void){
+	this->name = "Undefined";
+	this->price = 0;
 	this->count = 0;
 }
 Drug::Drug(char* n){
@@ -13,6 +13,17 @@ Drug::Drug(char* n){
 	this->price = 0;
 	this->count = 0;
 }
+Drug::Drug(char* n, int p){
+	this->name = n;
+	this->price = p;
+	this->count = 0;
+}
+Drug::Drug(char* n, int p, int c){
+	this->name = n;
+	this->price = p;
+	this->count = c;
+}
+Drug::~Drug(void){}
 
 int Drug::getCount(){
 	return count;
@@ -29,14 +40,12 @@ Drug Drug::operator+=(int n){
 	try{
 		this->count += n;
 	}catch(int e){}
-	this->render();
    	return *this;
 }
 Drug Drug::operator-=(int n){
 	try{
 		this->count -= n;
 	}catch(int e){}
-	this->render();
    	return *this;
 }
 
@@ -44,13 +53,11 @@ Drug Drug::operator+(int n){
 	try{
 		this->price += n;
 	}catch(int e){}
-	this->render();
    	return *this;
 }
 Drug Drug::operator-(int n){
 	try{
 		this->price -= n;
 	}catch(int e){}
-	this->render();
    	return *this;
 }
