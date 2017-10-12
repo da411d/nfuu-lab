@@ -7,6 +7,7 @@ public:
 	Drug(char*, int);
 	Drug(char*, int, int);
 	~Drug(void);
+	char* getName(void);
 	int getCount(void);
 	int getPrice(void);
 	void render(void);

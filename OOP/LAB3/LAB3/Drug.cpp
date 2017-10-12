@@ -25,6 +25,9 @@ Drug::Drug(char* n, int p, int c){
 }
 Drug::~Drug(void){}
 
+char* Drug::getName(){
+	return name;
+}
 int Drug::getCount(){
 	return count;
 }
@@ -34,8 +37,10 @@ int Drug::getPrice(){
 void Drug::render(void){
 	int coins = price % 100;
 	int uah = (price-coins)/100;
-	cout << name << "  |  " << uah << "." << coins << "  |  " << count << "øò." << endl;
+	cout << name << "  |  " << uah << "." << coins << "  |  " << count << "×¨×¢." << endl;
 }
+
+
 Drug Drug::operator+=(int n){
 	try{
 		this->count += n;

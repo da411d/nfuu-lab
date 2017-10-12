@@ -32,5 +32,28 @@ void DrugStore::print(){
 	int sum = getSum();
 	int coins = sum % 100;
 	int uah = (sum-coins)/100;
-	cout << "Ñóìà: " << uah << "." << coins << endl << endl;
+	cout << "â€”ÑƒÐ¼Ð°: " << uah << "." << coins << endl << endl;
+}
+
+Drug DrugStore::search(int val){return search(val, 0);}
+Drug DrugStore::search(int val, int offset = 0){
+	for(int i = offset; i < current; i++){
+		if(list[i].getCount() == val || list[i].getPrice() == val){
+			return list[i];
+		}
+	}
+	throw list[0];
+	return list[0];
+}
+
+Drug DrugStore::search(char* val){return search(val, 0);}
+Drug DrugStore::search(char* val, int offset = 0){
+	for(int i = offset; i < current; i++){
+		int cmp = strcmp(list[i].getName(), val);
+		if(cmp == 0){
+			return list[i];
+		}
+	}
+	throw list[0];
+	return list[0];
 }
