@@ -38,7 +38,7 @@ cat("-=( 2 )=-\n")
   
   cat("  ", "Біномний розподіл (червоний)", "\n");
     B <- dbinom(k, n, p)
-    plot(k, B, col="red", type="b", pch=16, ylim=range(c(B, G, P, R)), xlim=range(k))
+    plot(k, B, col="red", type="b", pch=16, ylim=range(c(B*3)), xlim=range(k))
     equalsB <- sum(B) == 1
     maxKB <- k[which(B == max(B))]
     inrangeB <- pbinom(b, n, p) - pbinom(a-1, n, p)
@@ -61,7 +61,7 @@ cat("-=( 2 )=-\n")
   cat("  ", "Геометричний розподіл (зелений)", "\n");
     G <- dgeom(k, p)
     lines(k, G, col="green", type="b", pch=16)
-    equalsG <- sum(G) == 1
+    equalsG <- sum(G) > 0.9 #Майже 1
     maxKG <- k[which(G == max(G))]
     inrangeG <- pgeom(b, p) - pgeom(a-1, p)
     cat("    ", "SUM == 1:   ", equalsG, "\n");
@@ -72,10 +72,10 @@ cat("-=( 2 )=-\n")
   cat("  ", "Гіпергеометричний розподіл (пурпурний)", "\n");
     R <- dhyper(k, M, N-M, n)
     lines(k, R, col="magenta", type="b", pch=16)
-    equalsR <- sum(R) == 1
+    equalsR <- sum(R) > 1 - 10e-1000 #Майже 1
     maxKR <- k[which(R == max(R))]
     inrangeR <- phyper(b, M, N-M, n) - phyper(a-1, M, N-M, n)
     cat("    ", "SUM == 1:   ", equalsR, "\n");
     cat("    ", "Kmax:        ", maxKR, "\n");
     cat("    ", "В проміжок:  ", inrangeR, "\n");
-    cat("\n");
+    cat("\n")
