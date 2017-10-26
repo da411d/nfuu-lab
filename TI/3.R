@@ -10,8 +10,8 @@ cat("-=( 1 )=-\n")
   n <- 5;
   p <- (L+12) / (L + 12 + L)
   probA <- dbinom(3, n, p)
-  probB <- probA + dbinom(2, n, p)
-  probC <- 1 - probA
+  probB <- dbinom(n, n, p) + dbinom(n-1, n, p)
+  probC <- dbinom(n, n, p)
   cat("Імовірність А:", probA, "\n")
   cat("Імовірність Б:", probB, "\n")
   cat("Імовірність В:", probC, "\n")
