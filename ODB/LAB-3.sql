@@ -3,8 +3,10 @@
 ALTER TABLE `sqlkn16_2_mdv`.`clients` 
 	ADD COLUMN `lastVisit` INT ;
 ALTER TABLE `sqlkn16_2_mdv`.`references` 
-	ADD COLUMN `hash` VARCHAR(15),
-	CHANGE COLUMN `hash` `signature` VARCHAR(15),
+	ADD COLUMN `hash` VARCHAR(15);
+ALTER TABLE `sqlkn16_2_mdv`.`references` 
+	CHANGE COLUMN `hash` `signature` VARCHAR(15);
+ALTER TABLE `sqlkn16_2_mdv`.`references` 
 	CHANGE COLUMN `signature` `signature` VARCHAR(32);
 ALTER TABLE `sqlkn16_2_mdv`.`clients` 
 	CHANGE COLUMN `lastVisit` `lastVisit` DATE AFTER `name`;
@@ -17,7 +19,7 @@ INSERT INTO `sqlkn16_2_mdv`.`clients` (`name`, `adress`, `birthday`, `phone`) VA
 INSERT INTO `sqlkn16_2_mdv`.`doctors` (`name`, `adress`, `birthday`, `phone`) VALUES ('Ліневич К. З.', 'вул. Турцяна, 23/45', '1928-02-03', '+380977770000');
 INSERT INTO `sqlkn16_2_mdv`.`history` (`timestamp`, `client`, `doctor`, `data`) VALUES (CURRENT_TIMESTAMP(), 5, 8, 'Зробив прививку');
 INSERT INTO `sqlkn16_2_mdv`.`references` (`timestamp`, `client_id`, `doctor_id`, `data`) VALUES (CURRENT_TIMESTAMP(), 8, 7, 'Здоровий');
-INSERT INTO `sqlkn16_2_mdv`.`queues` (`doctor_id`, `current_id`) VALUES (11, 255);
+INSERT INTO `sqlkn16_2_mdv`.`queues` (`doctor_id`, `current_id`) VALUES (11, 3);
 INSERT INTO `sqlkn16_2_mdv`.`tickets` (`client_id`, `queue_id`, `date`, `number`) VALUES (6, 3, CURRENT_TIMESTAMP(), 8);
     
 ##	-=( 3 )=-
