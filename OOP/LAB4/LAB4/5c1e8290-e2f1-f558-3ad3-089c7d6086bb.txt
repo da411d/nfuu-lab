@@ -1,0 +1,3 @@
+predator  |  50000UAH
+i5  |  5000UAH  |  2.4GHz
+mx228  |  2000UAH  |  1024GB
