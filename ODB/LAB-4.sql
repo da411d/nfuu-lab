@@ -15,7 +15,26 @@ SELECT name
 FROM doctors
 ORDER BY MIN(Day(birthday));
 
-#SELECT clients.name as clientName, doctors.name as doctorName, timestamp, data
-#FROM `references`
-#INNER JOIN doctors ON `references`.doctor_id = doctors.doctor_id
-#INNER JOIN clients ON `references`.client_id = clients.client_id;
+##виводить дані з трьох таблиць
+SELECT clients.name as clientName, doctors.name as doctorName, timestamp, data
+FROM `references`
+INNER JOIN doctors ON `references`.doctor_id = doctors.doctor_id
+INNER JOIN clients ON `references`.client_id = clients.client_id;
+
+##Вивід з діапазону
+SELECT clients.name as clientName, timestamp, data
+FROM `references`
+INNER JOIN clients ON `references`.client_id = clients.client_id
+WHERE Month(timestamp) BETWEEN 6 AND 8;
+
+##Вивід за шаблоном
+SELECT clients.name as clientName, timestamp, data
+FROM `references`
+INNER JOIN clients ON `references`.client_id = clients.client_id
+WHERE data LIKE 'М%';
+
+##Вивід за шаблоном
+SELECT clients.name as clientName, timestamp, data
+FROM `references`
+INNER JOIN clients ON `references`.client_id = clients.client_id
+WHERE data LIKE 'М%';

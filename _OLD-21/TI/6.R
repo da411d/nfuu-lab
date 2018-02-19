@@ -23,18 +23,20 @@ cat("Розмірність датафрейму: ",
 cat("\n")
 cat("-=( 2 )=-\n")
 cat("Перші 6 рЯдків:", "\n");
-head(data, n=6);
+print(head(data, n=6));
 
+cat("\n")
 cat("Перші 15 рЯдків:", "\n");
-head(data, n=15);
+print(head(data, n=15));
 
+cat("\n")
 cat("Останні 6 рЯдків:", "\n");
-head(data, n=6);
+print(head(data, n=6));
 
 cat("\n")
 cat("-=( 3 )=-\n")
 cat("Імена:", "\n");
-cat(names(data))
+cat(names(data), sep=", ")
 cat("\n")
 
 cat("\n")
@@ -57,7 +59,7 @@ cat("\n")
 cat("-=( 7 )=-\n")
 cat(
   "В Одесі продеєтьсЯ", 
-  (data %>% filter(Місто == "Одеса") %>% filter(Кімнат == 3) %>% count(Місто))$n, 
+  (data %>% filter(Місто == "Одеса") %>% filter(Кімнат == 3) %>% count(Місто)) $ n, 
   "трикімнатних квартир",
   "\n"
 )
@@ -66,8 +68,9 @@ cat("\n")
 cat("-=( 8 )=-\n")
 cat(
   "Медіана площ однокімнатних квартир у Львові:", 
-  (data %>%filter(Кімнат == 1) %>%filter(Місто == "Львів") %>%
-  group_by(Місто)%>%summarise(median=median(Загальна_площа)))$median,
+  (data %>% filter(Кімнат == 1) %>% filter(Місто == "Львів") %>% 
+     group_by(Місто) %>% summarise(median=median(Загальна_площа))
+   ) $ median,
   "\n"
 )
 
@@ -77,7 +80,8 @@ cat("-=( 9 )=-\n")
 cat("Залежність цін від кількості кімнат", "\n")
 ggplot(data, aes(x=factor(Кімнат), y=Ціна)) + 
   geom_boxplot() +
-  coord_flip()+xlab('Kімнат')
+  coord_flip() + 
+  xlab('Kімнат')
 
 cat("\n")
 cat("-=( 10 )=-\n")
