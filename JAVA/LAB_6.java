@@ -4,7 +4,7 @@ import java.io.*;
 
 class LAB_6{
 	public static void main(String[] args) throws Exception{
-		System.out.println("     -= LAB 5 =-     ");
+		System.out.println("     -= LAB 6 =-     ");
 		System.out.println("  by David Manzhula  ");
 		System.out.println("");
 		System.out.println("");
