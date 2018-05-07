@@ -3,7 +3,7 @@
 using namespace std;
 
 class charArray{
-private:
+protected:
 	char* value;
 	int maxLength;
 
