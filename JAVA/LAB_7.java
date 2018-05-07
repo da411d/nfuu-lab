@@ -10,7 +10,7 @@ class LAB_7{
 		System.out.println("");
 		
 		String n1 = "A";
-		System.out.println((int)n1.charAt(0));
+		System.out.println("0x" + n1 + "(16) = " + Integer.parseInt(n1, 16) + "(10)");
 
 		int n2 = 17;
 		System.out.println(n2 + "(10) = " + Integer.toOctalString(n2) + "(8)");

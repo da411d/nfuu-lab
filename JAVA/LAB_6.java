@@ -11,8 +11,8 @@ class LAB_6{
 		
 		Random r = new Random();
 		
-		Eagle ivan = new Eagle();
-		Duck ostap = new Duck();
+		Eagle ivan = new Eagle(10);
+		Duck ostap = new Duck(3);
 		
 		while(true){
 			if(r.nextBoolean()){
@@ -38,16 +38,29 @@ abstract class Bird{
 }
 
 class Eagle extends Bird{
+	int age;
+	public Eagle(int a){
+		this.age = a;
+	}
 	public void eat(){
-		System.out.println((new Date()).toLocaleString() + "> Орел поїв");
+		Random r = new Random();
+		int food = age*(1 + r.nextInt(2)) + r.nextInt(10);
+		System.out.println((new Date()).toLocaleString() + "> Орел поїв "+food+"кг мнєса");
 	}
 	public void move(){
 		System.out.println((new Date()).toLocaleString() + "> Орел полетів");
 	}
 }
 class Duck extends Bird{
+	int age;
+	public Duck(int age){
+		this.age = age;
+	}
 	public void eat(){
-		System.out.println((new Date()).toLocaleString() + "> Качка поїла");
+		Random r = new Random();
+		int food = age*(2 + r.nextInt(5))*10 + r.nextInt(10);
+		String food_type = (r.nextBoolean() ? "риби" : "хліба");
+		System.out.println((new Date()).toLocaleString() + "> Качка поїла "+food+"г "+food_type);
 	}
 	public void move(){
 		System.out.println((new Date()).toLocaleString() + "> Качка полетіла");

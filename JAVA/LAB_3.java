@@ -14,16 +14,18 @@ class LAB_3{
 
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
-				arr[i][j] = 10 + r.nextInt(90);
+				arr[i][j] = r.nextInt(90) - 45;
 			}
 		}
-		int max = arr[0][1];
+		int max = Integer.MIN_VALUE;
 		
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
 				if(i<j){
-					if(max < arr[i][j])max = arr[i][j];
+					if(max < arr[i][j] && arr[i][j] < 0 && arr[i][j]%2 == -1)max = arr[i][j];
 				}
+				if(arr[i][j] >= 0)System.out.print(" ");
+				if(Math.abs(arr[i][j]) < 10)System.out.print(" ");
 				System.out.print(arr[i][j]+" ");
 			}
 			System.out.println("");

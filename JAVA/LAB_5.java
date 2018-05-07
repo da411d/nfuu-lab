@@ -10,6 +10,25 @@ class LAB_5{
 		System.out.println("");
 		
 		StringBuffer s = new StringBuffer("Manzhula David Vadimovich 11 JUN 1999");
+		StringBuffer s2 = new StringBuffer(s);
+		
+		int start = 16, len = 5;
+		s2.delete(0, start-1);
+		s2.setLength(len);
+		
+		
+		System.out.println(s2);
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		
+		
+		
+		
+		
 		
 		System.out.println("1: "+s);
 		
