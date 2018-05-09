@@ -1,38 +1,39 @@
 #pragma once
 #include <string>
+#include <string.h>
 using namespace std;
 
 class charArray{
 protected:
 	char* value;
-	int maxLength;
+	int size = 1024;
 
 
 public:
 	//Constructors / Destructors
 	charArray(void) {
-		this->value = new char[maxLength];
+		this->value = new char[size];
 	};
-	charArray(char* input) {
-		this->value = new char[maxLength];
-		strcpy(this->value, input);
+	charArray(const char* input, int s) {
+		this->value = new char[s+1];
+		strcpy_s(this->value, s, input);
 	};
 	~charArray(void) {
 		delete value;
 	};
 
 	//Getters / Setters
-	int getMaxLength() {
-		return maxLength;
+	int getSize() {
+		return size;
 	};
-	int setMaxLength(int n) {
-		maxLength = n;
-		return maxLength; //Дада, так задумано. Хз нашо, але так задумано
+	int setSize(int n) {
+		size = n;
+		return size; //Дада, так задумано. Хз нашо, але так задумано
 	};
 
 	//Operators
 	charArray operator+(char* val) {
-		strcat(value, val);
+		strcat_s(value, this->size, val);
 		return *this;
 	};
 	charArray operator-(char* val) {
@@ -44,7 +45,7 @@ public:
 		return value - strstr(value, val);
 	};
 	void operator=(char* val) {
-		strcpy(value, val);
+		strcpy_s(value, this->size, val);
 	};
 	friend ostream& operator<<(ostream &io, charArray val) {
 		io << val;
