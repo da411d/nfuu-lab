@@ -1,6 +1,3 @@
-// Task13.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <windows.h>
 #include <fstream>
@@ -24,52 +21,6 @@
 
 using namespace std;
 
-long double log2(BigInt x, long double epsilon = 0.000000000000001)
-{
-	static /* const */ long double O = 0.0;
-	if (x.sign <= 0) return O / O;     // Return NaN
-
-	long double y = 0.0, z = 1.0, f = 0.0;
-	while (x >= 2)
-	{
-		if (x.divide(2)) f += 1.0;
-		f /= 2.0;
-		y++;
-	}
-	f += 1.0;
-	while (z > epsilon)
-	{
-		f *= f;
-		z /= 2.0;
-		if (f >= 2.0)
-		{
-			y += z;
-			f /= 2.0;
-		}
-	}
-	return y;
-}
-
-inline long double log(BigInt x, long double epsilon = 0.000000000000001)
-{
-	return log2(x, epsilon) * 0.6931471805599;
-}
-
-inline long double log10(BigInt x, long double epsilon = 0.000000000000001)
-{
-	return log2(x, epsilon) * 0.301029995664;
-}
-
-inline long double lg(BigInt x, long double epsilon = 0.000000000000001)
-{
-	return log2(x, epsilon);
-}
-
-inline long double ln(BigInt x, long double epsilon = 0.000000000000001)
-{
-	return log(x, epsilon);
-}
-
 int main(int argc, char* argv[])
 {
 	try
@@ -84,17 +35,19 @@ int main(int argc, char* argv[])
 		BigInt *p_BigInt, o_BigInt;
 
 		cout << "=========================================== " << endl;
-		cout << " Êóðñîâà ðîáîòà ñò.ãð. ÊÍ-2 Êóçüìèêà Àíäð³ÿ " << endl;
+		cout << "            Êóðñîâà ðîáîòà ç ÎÎÏ            " << endl;
+		cout << "            Ñòóäåíòà ãðóïè ÊÍ-21            " << endl;
+		cout << "               Ìàíæóëè Äàâèäà               " << endl;
 		cout << "=========================================== " << endl;
 
-		cout << "Ââåäiòü áóäü-ëàñêà êiëüêiñòü ÷èñåë: ";
+		cout << "Ââåäiòü êiëüêiñòü ÷èñåë: ";
 		nCount = GetInt(cin);
 
 		BigIntArray bigIntArr(nCount);
-		bigIntArr.Input(); // Ââåäåííÿ äàíèõ
-		bigIntArr.Show(); //Âèâåäåííÿ äàíèõ
+		bigIntArr.Input();
+		bigIntArr.Show();
 		cout << endl;
-		cout << "Ââåäåííÿ ÷èñåë çàâåðøåíî." << endl;
+		cout << "Ââåäåííÿ ÷èñåë çàâåðøåíî." << endl << endl;
 		
 		BigInt b = BigInt(12345000);
 		BigInt c; c = b;
@@ -116,14 +69,9 @@ int main(int argc, char* argv[])
 				cout << "4. Ä³ëåííÿ ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
 				cout << "5. Êîíêàòåíàö³ÿ ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
 				cout << "6. Â³äîáðàæåííÿ ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
-				cout << "7. Ïîá³òîâ³ (ïîðîçðÿäí³) îïåðàö³¿ íàä ÂÅËÈÊÈÌÈ Ö²ËÈÌÈ ×ÈÑËÀÌÈ\n";
-				cout << "8. Ïåðåá³ð ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
-				cout << "9. Ëîãàðèôìè ç ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
-				cout << "10. Âèâ³ä ÌÀÑÈÂÓ ÂÅËÈÊÈÕ ×ÈÑÅË\n";
-				cout << "11. Çíàéòè ñóìó åëåìåíò³â ìàñèâó ÂÅËÈÊÈÕ Ö²ËÈÕ ×ÈÑÅË\n";
-				cout << "12. Äåìî ìåõàí³çìó ï³çíüîãî çâ'ÿçóâàííÿ ÌÀÑÈÂ ÂÅËÈÊÈÕ ×ÈÑÅË = ÐßÄÎÊ\n";
-				cout << "13. Äåìî ìåõàí³çìó ï³çíüîãî çâ'ÿçóâàííÿ ÌÀÑÈÂ ÂÅËÈÊÈÕ ×ÈÑÅË = ÂÅËÈÊÅ Ö²ËÅ ×ÈÑËÎ\n";
-				cout << "14. Âèõiä\n";
+				cout << "7. Äåìî ìåõàí³çìó ï³çíüîãî çâ'ÿçóâàííÿ ÌÀÑÈÂ ÂÅËÈÊÈÕ ×ÈÑÅË = ÐßÄÎÊ\n";
+				cout << "8. Äåìî ìåõàí³çìó ï³çíüîãî çâ'ÿçóâàííÿ ÌÀÑÈÂ ÂÅËÈÊÈÕ ×ÈÑÅË = ÂÅËÈÊÅ Ö²ËÅ ×ÈÑËÎ\n";
+				cout << "0. Âèõiä\n";
 				cout << "Âèáåðiòü áóäü-ëàñêà ïóíêò ç ìåíþ: ";
 
 				input = GetInt(cin);
@@ -257,62 +205,7 @@ int main(int argc, char* argv[])
 						cout << endl;
 					}
 					break;
-					case 7: 
-					{
-						cout << "Ïîá³òîâ³ îïåðàö³¿ (Bitwise operations):" << endl;
-						cout << "1 << 10 = " << (1 << 10) << " = " << (BigInt(1) << 10) << endl;
-						cout << "-7 << 2 = " << (-7 << 2) << " = " << (BigInt(-7) << 2) << endl;
-						cout << "3 << 8 = " << (3 << 8) << " = " << (BigInt(3) << 8) << endl;
-						cout << "3 << 9 = " << (3 << 9) << " = " << (BigInt(3) << 9) << endl;
-						cout << "1024 >> 9 = " << (1024 >> 9) << " = " << (BigInt(1024) >> 9) << endl;
-						cout << "-1 >> 4 = " << (-1 >> 4) << " = " << (BigInt(-1) >> 4) << endl;
-						cout << endl;
-						cout << "Input:" << endl;
-						istringstream in("1234567890");
-						in >> x;
-						cout << "1234567890 = " << x << endl;
-						istringstream in2(" \t\n\r01234 -00009876\t");
-						in2 >> x >> rem2;
-						cout << "1234 = " << x << endl;
-						cout << "-9876 = " << rem2 << endl;
-						cout << endl;
-					}
-					break;
-					case 8: 
-					{
-						cout << "Exhaustion:" << endl;
-						BigInt *table = new BigInt[10240];
-						table[0] = 0; table[1] = 1;
-						for (int i = 2; i < 10240; i++)
-							table[i] = table[i - 1] + table[i - 2];
-						cout << "Fibonacci( 615 )  = " << table[615] << endl;
-						cout << "Fibonacci( 10000 )  = " << table[10000] << endl;
-						delete[] table;
-						cout << endl;
-					}
-					break;
-					case 9:
-					{
-						cout << "Ëîãàðèôìè (Logarithms):" << endl;
-						cout << "log2( 1024 ) = " << log2(BigInt(1024)) << endl;
-						cout << "log2( 6 ) = " << log2(BigInt(6)) << endl;
-						cout << "log( 0 ) = " << log(BigInt(0)) << endl;
-						cout << "log10( 1000000 ) = " << log10(BigInt(10000000)) << endl;
-						cout << "log( 1234567 ) = " << log(BigInt(1234567)) << endl;
-					}
-					break;
-					case 10: // Âèâ³ä äàíèõ
-						bigIntArr.Show();
-					cout << endl;
-					break;
-					case 11: 
-					{
-						 cout << "Ñóìà åëåìåíò³â ìàñèâó: " << endl;
-						 cout << bigIntArr.Sum();
-						 cout << endl;
-					}
-					break;
-					case 12: // âèêëèê â³ðòóàëüíîãî îïåðàòîðà êîíêàòåíàö³¿ ðÿäê³â
+					case 7: // âèêëèê â³ðòóàëüíîãî îïåðàòîðà êîíêàòåíàö³¿ ðÿäê³â
 					{
 						String *pObj = new String();
 						for (p_BigInt = bigIntArr.begin(); p_BigInt != bigIntArr.end(); ++p_BigInt)
@@ -325,7 +218,7 @@ int main(int argc, char* argv[])
 						delete pObj;
 					}
 					break;
-					case 13: // âèêëèê â³ðòóàëüíîãî îïåðàòîðà äîäàâàííÿ âåëèêèõ ö³ëèõ ÷èñåë
+					case 8: // âèêëèê â³ðòóàëüíîãî îïåðàòîðà äîäàâàííÿ âåëèêèõ ö³ëèõ ÷èñåë
 					{
 						String *pObj = new BigInt();
 						for (p_BigInt = bigIntArr.begin(); p_BigInt != bigIntArr.end(); ++p_BigInt)
@@ -336,7 +229,7 @@ int main(int argc, char* argv[])
 						delete pObj;
 					}
 					break;
-					case 14: // Âèõ³ä ç ïðîãðàìè
+					case 0: // Âèõ³ä ç ïðîãðàìè
 						cout << "Äÿêóºìî, ùî ñêîðèñòàëèñÿ íàøîþ ïðîãðàììîþ!\n";
 						exit(1);
 					break;
