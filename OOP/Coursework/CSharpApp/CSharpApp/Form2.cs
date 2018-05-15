@@ -77,21 +77,10 @@ namespace BigIntNumbersCalculator
 
         private void btnDynamicBindingDemo_Click(object sender, EventArgs e)
         {
-            //BigInt oRef1, oRef2;
-            /*string num = "";
-            if (bigIntsListView.SelectedIndices.Count > 0)
-            {
-                num = bigIntsListView.SelectedItems[0].SubItems[0].Text;
-                BigInt number = bigIntArr.GetBigInts().ElementAt(bigIntsListView.SelectedIndices[0]);
-                oRef1 = new BigInt(number);
-                //oRef2 = new CTruck(truck);
-                //MessageBox.Show(oRef1.Output() + "\n" , "Потужність і вантажопідйомність " + brand);
-            }*/
-            BigInt a = new BigInt(_parentForm.Display.Text, 10);
+            BigInt a = new BigInt(_parentForm.output.Text, 10);
             BigInt b = bigIntArr.GetBigInts().ElementAt(selectionIndex);
             BigInt c = a + b; 
             MessageBox.Show("Сума двох елементів: " + a.ToString() + "+" + b.ToString() + "=" + c.ToString(), "Сума двох елементів");
-            //parentForm.label1.Text = ""
         }
 
         public void UpdateData()

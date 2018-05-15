@@ -37,6 +37,9 @@
             // 
             // bigIntsListView
             // 
+            this.bigIntsListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bigIntsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.bigIntsListView.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -44,7 +47,7 @@
             this.bigIntsListView.GridLines = true;
             this.bigIntsListView.Location = new System.Drawing.Point(12, 12);
             this.bigIntsListView.Name = "bigIntsListView";
-            this.bigIntsListView.Size = new System.Drawing.Size(465, 257);
+            this.bigIntsListView.Size = new System.Drawing.Size(465, 203);
             this.bigIntsListView.TabIndex = 0;
             this.bigIntsListView.UseCompatibleStateImageBehavior = false;
             this.bigIntsListView.View = System.Windows.Forms.View.Details;
@@ -57,8 +60,9 @@
             // 
             // btnSum
             // 
+            this.btnSum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSum.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSum.Location = new System.Drawing.Point(12, 275);
+            this.btnSum.Location = new System.Drawing.Point(12, 222);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(140, 23);
             this.btnSum.TabIndex = 1;
@@ -68,10 +72,11 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(402, 275);
+            this.button2.Location = new System.Drawing.Point(372, 222);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(105, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Очистити";
             this.button2.UseVisualStyleBackColor = true;
@@ -79,10 +84,11 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(167, 275);
+            this.button3.Location = new System.Drawing.Point(158, 221);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(208, 23);
+            this.button3.Size = new System.Drawing.Size(208, 24);
             this.button3.TabIndex = 3;
             this.button3.Text = "Демо пізнього зв\'язування";
             this.button3.UseVisualStyleBackColor = true;
@@ -92,12 +98,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 311);
+            this.ClientSize = new System.Drawing.Size(489, 257);
+            this.ControlBox = false;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.bigIntsListView);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "МАСИВ ВЕЛИКИХ ЧИСЕЛ";
             this.ResumeLayout(false);
 
