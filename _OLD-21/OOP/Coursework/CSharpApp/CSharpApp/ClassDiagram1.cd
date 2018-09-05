@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BigIntNumbersCalculator.BigInt">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="abs" Hidden="true" />
+      <Method Name="max" Hidden="true" />
+      <Method Name="min" Hidden="true" />
+      <Method Name="operator -" Hidden="true" />
+      <Method Name="operator !=" Hidden="true" />
+      <Method Name="operator %" Hidden="true" />
+      <Method Name="operator ~" Hidden="true" />
+      <Method Name="operator &lt;=" Hidden="true" />
+      <Method Name="operator ==" Hidden="true" />
+      <Method Name="operator &gt;=" Hidden="true" />
+      <Method Name="shiftLeft" Hidden="true" />
+      <Method Name="shiftRight" Hidden="true" />
+      <Method Name="singleByteDivide" Hidden="true" />
+      <Method Name="ToHexString" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAMAAAAACQAAAM4AWJIgACAgAAAJICAgASAAAAByA=</HashCode>
+      <FileName>BigInt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BigIntNumbersCalculator.BigIntArray">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABBAAAACAAASAEACEAAAAIAAAAAgBAAQ=</HashCode>
+      <FileName>BigIntArray.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BigIntNumbersCalculator.String">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEYAMAAABAEAQAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>String.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -230,7 +230,6 @@ int main(int argc, char* argv[])
 					}
 					break;
 					case 0: // Вихід з програми
-						cout << "Дякуємо, що скористалися нашою программою!\n";
 						exit(1);
 					break;
 					default:
@@ -244,8 +243,6 @@ int main(int argc, char* argv[])
 				cout << ex.what() << endl;
 			}
 			myItr.~MyIterator();
-			cout << "Продовжити?(так - 'y')" << endl;
-			flag = _getch();
 		}
 	}
 	catch (Error ex)

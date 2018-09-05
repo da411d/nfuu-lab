@@ -12,14 +12,14 @@ class LAB_8{
 		Scanner s = new Scanner(System.in);
 		HashMap list = new HashMap();
 		
+		System.out.println("1 - Додати значення");
+		System.out.println("2 - Пошук значення");
+		System.out.println("3 - Видалення знення");
+		System.out.println("4 - Вивести всі");
+		System.out.println("5 - Очистити");
+		System.out.println("0 - Вихід");
+		System.out.println();		
 		while(true){
-			System.out.println("1 - Додати значення");
-			System.out.println("2 - Пошук значення");
-			System.out.println("3 - Видалення знення");
-			System.out.println("4 - Вивести всі");
-			System.out.println("0 - Вихід");
-			System.out.println();
-			
 			System.out.print("Введи команду: ");int cmd = s.nextInt();
 			
 			switch(cmd){
@@ -74,6 +74,18 @@ class LAB_8{
 						String v = list.get(k).toString();
 						System.out.println(k+" - "+v);
 					}					
+					break;
+					
+				case 5:
+					System.out.println("Ви впевнені що бажаєте очистити список?");
+					System.out.print("Напишіть YES для підтвердження: ");
+					String confirmClear = s.next();
+					if(confirmClear.compareToIgnoreCase("yes") == 0){
+						list.clear();
+						System.out.print("Видалено успішно!");
+					}else{
+						System.out.print("Операція скасована");
+					}
 					break;
 					
 				case 0:
