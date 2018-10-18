@@ -1,0 +1,89 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Пришляк</title>
+	<style>
+		label.wide{
+			display: inline-block;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<form method="POST">
+		<p>Я шукаю телефон:</p>
+		<p>
+			<label class="wide">Фірми: </label>
+			<select name="brand">
+				<option selected disabled>Оберіть фірму-виробника</option>
+				<option>Xiaomi</option>
+				<option>Huawei</option>
+				<option>Meizu</option>
+			</select>
+		</p>
+		<p>
+			<label class="wide">Модель: </label>
+			<select name="model">
+				<option selected disabled>Оберіть модель</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+		</p>
+		<p>
+			<label>
+				<input type="radio" name="display" value="color">
+				З кольоровим дисплеєм
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="display" value="monochrome">
+				З не кольоровим дисплеєм
+			</label>
+		</p>
+		<p>
+			З ціною, не вищою за*
+			<input type="number" style="width: 48px" name="max_price">
+			<select name="currency">
+				<option>ГРН</option>
+				<option selected>ЄВРО</option>
+				<option>ДОЛЛАР</option>
+				<option>РУБ</option>
+			</select>
+		</p>
+		<p>
+			Додаткові вимоги
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1">
+				Вбудована газова камера
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-2">
+				Диктофон
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-3">
+				Java-ігри
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-4">
+				Органайзер
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1">
+				Поліфонічні мелодії
+			</label>
+		</p>
+		<p>
+			<label class="wide">Моя електронна адреса</label>
+			<input type="email" name="my_mail">
+		</p>
+		<input type="submit" value="Відправити запит">
+	</form>
+</body>
+</html>
