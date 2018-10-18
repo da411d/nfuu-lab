@@ -1,0 +1,106 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LAB_2</title>
+	<style>
+		body{
+			color: #ffaaaa;
+			font-family: Arial;
+			background-image: linear-gradient(30deg, #3f51b5, #2196f3);
+		}
+		p.info{
+			margin-bottom: 16px;
+			padding: 16px;
+			transition: 0.4s background;
+		}
+		p.info:target{
+			background-color: #ffffff;
+			color: #880000;
+		}
+		p.info span{
+			display: block;
+			font-size: 200%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Лаба №2</h1>
+	<h2>Форми</h2>
+	<form method="POST">
+		<p>Я шукаю телефон:</p>
+		<p>
+			Фірми: 
+			<select name="brand">
+				<option selected disabled>Оберіть фірму-виробника</option>
+				<option>Xiaomi</option>
+				<option>Huawei</option>
+				<option>Meizu</option>
+			</select>
+		</p>
+		<p>
+			Модель: 
+			<select name="model">
+				<option selected disabled>Оберіть модель</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+		</p>
+		<p>
+			<label>
+				<input type="radio" name="display" value="color">
+				З кольоровим дисплеєм
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="display" value="monochrome">
+				З не кольоровим дисплеєм
+			</label>
+		</p>
+		<p>
+			З ціною, не вищою за*
+			<input type="number" name="max_price">
+			<select name="currency">
+				<option selected disabled>Оберіть валюту</option>
+				<option>ГРН</option>
+				<option>ЄВРО</option>
+				<option>ДОЛЛАР</option>
+				<option>РУБ</option>
+			</select>
+		</p>
+		<p>
+			Додаткові вимоги
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1" value="enabled">
+				Вбудована газова камера
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1" value="enabled">
+				Диктофон
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1" value="enabled">
+				Java-ігри
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1" value="enabled">
+				Органайзер
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="feature-1" value="enabled">
+				Поліфонічні мелодії
+			</label>
+		</p>
+		<p>
+			Моя електронна адреса
+			<input type="email" name="my_mail">
+		</p>
+		<input type="submit" value="Відправити запит">
+	</form>
+</body>
+</html>

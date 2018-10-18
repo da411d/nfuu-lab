@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LAB_1</title>
+	<style>
+		body{
+			color: #ffaaaa;
+			font-family: Arial;
+			background-image: linear-gradient(30deg, #3f51b5, #2196f3);
+		}
+		p{
+			margin-bottom: 16px;
+			padding: 16px;
+			transition: 0.4s background;
+		}
+		p:target{
+			background-color: #ffffff;
+			color: #880000;
+		}
+		p span{
+			display: block;
+			font-size: 200%;
+		}
+	</style>
+</head>
+<body>
+	<table border="1">
+		<tbody>
+			<tr>
+				<td width="100">
+					<b>Список улюблених пісень, занять, тварин, рослин, комп’ютерних забавок:</b>
+					<ul>
+						<li>Улюблена пісня</li>
+						<li>Улюблене заняття</li>
+						<li>Улюблена тварина</li>
+						<li>Улюблена рослина</li>
+						<li>Улюблена комп'ютерна забавка</li>
+					</ul>
+				</td>
+				<td width="100">
+					<b>Список улюблених предметів:</b>
+					<ol>
+						<li>Улюблена вилка</li>
+						<li>Улюблена ложка</li>
+						<li>Улюблена чашка</li>
+						<li>Улюблена тарілка</li>
+					</ol>
+				</td>
+				<td>
+					<img src="./img/comp.png" usemap="#compmap">
+					<map name="compmap"> 
+						<area shape="poly" 
+						coords="55,5, 180,5, 180,100, 55,100" href="#монітор"> 
+						<area shape="poly" coords="30,100, 200,100, 225,175, 5,175" href="#клавіатура"> 
+						<area shape="circle" coords="245,155, 25" href="#миша"> 
+					</mар> 
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<p id="монітор">
+		<span>Монітор</span>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere eu mauris a pretium. Sed ante nisl, tristique in fringilla ac, tristique eu dolor. Curabitur dictum ullamcorper ante eget tincidunt. Morbi et fermentum diam, ac cursus eros. Nam et velit tellus. Nulla nec lacinia tellus. Nulla hendrerit metus eu sem porta luctus. Donec varius enim sed malesuada ultricies. In nec consectetur augue.
+	</p>
+	<p id="клавіатура">
+		<span>Клавіатура</span>
+		Maecenas egestas pretium ante sit amet mattis. Vestibulum libero quam, malesuada vel aliquam luctus, vestibulum a elit. Donec a metus fringilla, lobortis arcu bibendum, semper mi. Aenean vitae ante posuere, vehicula nibh consequat, consectetur turpis. Etiam nec arcu auctor enim congue lacinia eu et quam. Nunc tristique felis eget nisl bibendum rhoncus. Mauris odio turpis, fringilla et ex ut, pellentesque cursus mauris. Aenean aliquam sit amet turpis in viverra. Ut faucibus eleifend velit vitae sagittis. Vestibulum sed diam ac elit imperdiet pellentesque. Proin eget tempus turpis. Donec suscipit, tellus id ullamcorper tincidunt, erat nunc efficitur lectus, at sagittis dolor felis vitae neque. Phasellus tempus odio sodales diam consequat, non imperdiet massa ornare. Vivamus iaculis ac dolor ullamcorper placerat.
+	</p>
+	<p id="миша">
+		<span>Миша</span>
+		Morbi rhoncus, felis id ultrices efficitur, nulla purus mattis dui, id euismod nisi enim id nisl. Vivamus sit amet justo in sapien tempor tristique quis sit amet sapien. Sed nisl magna, efficitur nec quam non, feugiat cursus risus. Aliquam mattis felis id est molestie, et finibus purus faucibus. Vestibulum sagittis quam eget luctus lacinia. Sed malesuada metus non nisl consequat dapibus. Maecenas interdum justo elementum placerat viverra. Quisque hendrerit egestas convallis. Donec at varius nulla, id blandit est.
+	</p>
+</body>
+</html>
