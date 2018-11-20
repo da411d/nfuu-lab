@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Клікни десь тут</h1>
+<button onclick="doSomething()">Змінити розміри вікна</button>
+<script>
+window.onmouseup = function(e){
+	alert("Номер клавіші: " + e.which);
+}
+
+function doSomething(){
+	event.preventDefault();
+	var w = prompt("Введіть ширину вікна", 400);
+	var h = prompt("Введіть висоту вікна", 400);
+	alert("Нове вікно матиме розміри " + w + "x" + h);
+	
+	window.resizeTo(w, h);
+}
+</script>
+</body>
+</htmk>
