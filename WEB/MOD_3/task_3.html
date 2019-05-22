@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MOD_1</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="angularjs-1.6.4-dist/css/w3.css">
+	</head>
+	
+	<body ng-app="MOD_1" ng-controller="MOD_1_TASK_3">
+		<div class="w3-container">
+			<h3>Users</h3>
+			<ul>
+				<li ng-repeat="(id, user) in users">
+					{{ user.firstName | upperCase}} {{ user.lastName | upperCase}} {{ user.phone }}
+				</li>
+			</ul>
+		</div>
+		<script src="angularjs-1.6.4-dist/js/angular.min.js"></script> 
+		<script src="task_3.js"></script> 
+	</body>  
+	
+</html>
