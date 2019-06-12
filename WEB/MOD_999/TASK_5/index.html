@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manzhula</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="angularjs-1.6.4-dist/css/w3.css">
+	</head>
+	
+	<body ng-app="EX" ng-controller="EX_Controller">
+		<div class="w3-container">
+			<select ng-model="selectedUser" ng-options="user.firstName for (id, user) in users"></select>
+			<h1>You selected: {{selectedUser.firstName}} {{selectedUser.lastName}}</h1>
+
+		</div>
+	</body>  
+	
+	<script src="angularjs-1.6.4-dist/js/angular.min.js"></script> 
+	<script src="myUsers.js"></script> 
+</html>
