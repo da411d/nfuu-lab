@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StockExchangeDraft.StockExchange" Collapsed="true">
+    <Position X="1.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>1kRNAEEAKSQQ4FgJ5gqEyYYCkRAAYAQUAkAAhAhIgAI=</HashCode>
+      <FileName>StockExchange.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player1" />
+      <Field Name="player2" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DictCompanies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="StockExchangeDraft.Company" Collapsed="true">
+    <Position X="1" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAIQIIAAAQCAAAEIIACgCABIACAAIBAgCCBQBAAAUA=</HashCode>
+      <FileName>Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.Event" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAIAAAACAAAAACAAAAAg=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.EventBullAndBear" Collapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventBullAndBear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.EventCrash" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventCrash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.EventDelisting" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>EventDelisting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.Player" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFUAAgAEAAQAACQIQAUAAAAAEAAAEAACAAAAAAIAIAg=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.PlayerRand" Collapsed="true">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PlayerRand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.PlayerStrat" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAQAQAAEAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>PlayerStrat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExchangeDraft.Stock" Collapsed="true">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAABBQAAgAQ=</HashCode>
+      <FileName>Stock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
