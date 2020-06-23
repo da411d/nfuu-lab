@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///E:/STUDIO/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2014-11-23T23:49:46" Importance="High" Text="Реконструирование запущено." />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;Boolean&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder&quot; -  (Package)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Medium" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1&quot; -  (Class)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::components&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayMIME&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayMIME_Click&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayMIME_Click::e&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayMIME_Click::sender&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayOtherFormat&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayOtherFormat_Click&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayOtherFormat_Click::e&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::displayOtherFormat_Click::sender&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::Dispose&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::Dispose::disposing&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::Form1&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::fromAddress&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::fromAddress_TextChanged&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::fromAddress_TextChanged::e&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::fromAddress_TextChanged::sender&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::fromValide&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::groupBox1&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::groupBox2&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::InitializeComponent&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::IsValidEmail&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::IsValidEmail::email&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::label1&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::label2&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::label3&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::MIMEMessage&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::otherFormatMessage&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::parser&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::radioButton1&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::radioButton2&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::richTextBox1&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::richTextBox2&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::ShowAddressStatus&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::ShowAddressStatus::box&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::ShowAddressStatus::valid&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::ShowAddressStatus::ValideLabel&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::toAddress&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::toAddress_TextChanged&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::toAddress_TextChanged::e&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::toAddress_TextChanged::sender&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::toValide&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::validAddress1&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::Form1::validAddress2&quot; -  (Property)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::MIMEMsg&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::MIMEParser&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::Builder::OutboundMessageIF&quot; -  (Interface)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System&quot; -  (Package)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::ComponentModel&quot; -  (Package)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::ComponentModel::IContainer&quot; -  (Interface)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::EventArgs&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Object&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows&quot; -  (Package)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms&quot; -  (Package)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::Button&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::Form&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::GroupBox&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::Label&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::RadioButton&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::RichTextBox&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Windows::Forms::TextBox&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;String&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::Builder::Form1 в ModelingProject1::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="High" Text="Полностью реконструировано (1) типов." />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="High" Text="Частично реконструировано (13) типов.  Эти типы не были включены в исходный выбор, поэтому их полные определения не реконструированы.  Данная пустая операция лишь проверила наличие этих типов в модели UML, поскольку они необходимы для полного описания других элементов." />
+  <Message Timestamp="2014-11-23T23:49:49" Importance="High" Text="Операция реконструирования завершена; ошибок: (0), предупреждений: (0)." />
+</Log>
