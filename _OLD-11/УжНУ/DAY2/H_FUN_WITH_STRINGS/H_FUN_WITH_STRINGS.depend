@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1502625659 source:c:\users\студент\desktop\day2\h_fun_with_strings\main.cpp
+	<iostream>
+	<string>
+	<math.h>
+
