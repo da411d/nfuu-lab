@@ -1,0 +1,16 @@
+.model kd521a   D(Is=115f Rs=3.21 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=2.25p M=.26
++               Vj=.68 Fc=.5 Isr=100p Nr=2 Bv=75 Ibv=10p Tt=3.12n)
+.model KD512A   D(Is=2.12E-15 Rs=9.2 CJO=1.16P M=0.25 TT=0.961N
++               VJ=0.69 BV=15 IBV=1E-11 EG=1.11 FC=0.5 XTI=3 N=1)
+.MODEL Q2D522A  D(IS=2.27E-13 RS=1.17 CJO=2.42P M=0.25 TT=2.38N
++               VJ=0.68 BV=50 IBV=1E-11 EG=1.11 FC=0.5 XTI=1 N=1)
+.MODEL Q2D103A  D(IS=6.71E-13 RS=3.43 CJO=8.58P M=0.29 TT=4.15N
++               VJ=0.72 BV=75 IBV=1E-11 EG=1.11 FC=0.5 XTI=3 N=1)
+.MODEL Q2D503A  D(IS=7.9E-13 RS=2.3 CJO=1.86P M=0.27 TT=7.19N
++               VJ=0.77 BV=50 IBV=1E-11 EG=1.11 FC=0.5 XTI=3 N=1)
+.MODEL Q2D521A  D(IS=1.15E-13 RS=3.21 CJO=2.25P M=0.26 TT=3.12N
++               VJ=0.68 BV=75 IBV=1E-11 EG=1.11 FC=0.5 XTI=3 N=1)
+.MODEL KD102A   D(IS=2.166E-11 N=1.28 RS=1.79 CJO=3.27P TT=6.12E-9
++               M=0.32 VJ=0.71 FC=0.5 BV=250 IBV=1E-11 EG=1.11 XTI=3)
+.model kd202d   D(Is=4.012n Rs=47m N=1.56 Xti=3 Eg=1.11 Cjo=82p M=.28
++               Vj=.73 Fc=.5 Isr=100p Nr=2 Bv=600 Ibv=100p Tt=319n)

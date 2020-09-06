@@ -1,0 +1,14 @@
+#include "MyForm1.h"
+
+using namespace System;
+using namespace System::Windows::Forms; 
+
+[STAThread]
+void Main()
+{
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+
+	Procppform1::MyForm1 form;
+	Application::Run(%form);
+}

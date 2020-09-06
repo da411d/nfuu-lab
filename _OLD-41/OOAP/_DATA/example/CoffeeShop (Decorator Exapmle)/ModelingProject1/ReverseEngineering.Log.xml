@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///E:/STUDIO/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2014-11-13T00:23:49" Importance="High" Text="Реконструирование запущено." />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::CoffeeShop&quot; -  (Package)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Medium" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::CoffeeShop::Program&quot; -  (Class)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::CoffeeShop::Program::Main&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::CoffeeShop::Program::Main::args&quot; -  (Parameter)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::CoffeeShop::Program::Program&quot; -  (Operation)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;String&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="High" Text="Полностью реконструировано (1) типов." />
+  <Message Timestamp="2014-11-13T00:23:50" Importance="High" Text="Операция реконструирования завершена; ошибок: (0), предупреждений: (0)." />
+</Log>

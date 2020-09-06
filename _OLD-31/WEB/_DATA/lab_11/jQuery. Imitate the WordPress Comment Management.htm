@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>jQuery. Imitate the WordPress Comment Management</title>
+
+<script type="text/javascript" src="./jQuery. Imitate the WordPress Comment Management_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./jQuery. Imitate the WordPress Comment Management_files/jquery.color.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".pane:even").addClass("alt");
+
+	$(".pane .btn-delete").click(function(){
+		alert("This comment will be deleted!");
+		
+		$(this).parents(".pane").animate({ backgroundColor: "#fbc7c7" }, "fast")
+		.animate({ opacity: "hide" }, "slow")
+		return false;
+	});
+
+	$(".pane .btn-unapprove").click(function(){
+		$(this).parents(".pane").animate({ backgroundColor: "#fff568" }, "fast")
+		.animate({ backgroundColor: "#ffffff" }, "slow")
+		.addClass("spam")
+		return false;
+	});
+
+	$(".pane .btn-approve").click(function(){
+		$(this).parents(".pane").animate({ backgroundColor: "#dafda5" }, "fast")
+		.animate({ backgroundColor: "#ffffff" }, "slow")
+		.removeClass("spam")
+		return false;
+	});
+
+	$(".pane .btn-spam").click(function(){		
+		$(this).parents(".pane").animate({ backgroundColor: "#fbc7c7" }, "fast")
+		.animate({ opacity: "hide" }, "slow")
+		return false;
+	});
+
+});
+</script>
+
+
+<style type="text/css">
+body {
+	margin: 10px auto;
+	width: 470px;
+}
+a, a:visited {
+	color: #000099;
+}
+a:hover {
+	text-decoration: none;
+}
+h3 {
+	margin: 0;
+	padding: 0 0 .3em;
+}
+p {
+	margin: 0;
+	padding: 0 0 1em;
+}
+.pane {
+	background: #ffffff;
+	padding: 10px 20px 10px;
+	position: relative;
+	border-top: solid 1px #ccc;
+}
+.alt {
+	background: #f5f4f4;
+}
+.spam {
+	color: #999999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="pane alt">
+	<h3>Nick says:</h3>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-unapprove">Unapprove</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane spam">
+	<h3>John says:</h3>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-approve">Approve</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane alt">
+	<h3>Smith says:</h3>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-unapprove">Unapprove</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane">
+	<h3>Jen says:</h3>
+	<p>Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-unapprove">Unapprove</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane alt">
+	<h3>Jen says:</h3>
+	<p>Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-unapprove">Unapprove</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane spam">
+	<h3>John says:</h3>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-approve">Approve</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+<div class="pane alt">
+	<h3>Smith says:</h3>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+	<p><a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-delete">Delete</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-unapprove">Unapprove</a> | <a href="http://anton.shevchuk.name/wp-demo/jquery-tutorials/wordpress-comments.html#" class="btn-spam">Spam</a></p>
+</div>
+
+
+</body></html>

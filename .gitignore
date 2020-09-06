@@ -1,8 +1,8 @@
 ## Custoom
-_DATA/
-.R*
-*.doc
-*.docx
+##_DATA/
+##.R*
+##*.doc
+##*.docx
 *.ini
 
 

@@ -1,0 +1,76 @@
+html, body {
+	margin: 0px; /** Этступы со всех сторон равны 0px **/
+	padding: 0px; /** Этступы со всех сторон равны 0px **/
+	font-family: Arial, Helvetica, 'sans-serif'; /** °рифты по умолчанию **/
+}
+
+.container {
+	width: 1000px;
+}
+
+.header-descript {
+	background: #563d7c;
+	color: white;
+}
+
+.header-descript .header-title {
+	margin-top: 10px;
+	font-size: 42px;
+	text-align: center;
+}
+
+.header-descript .header-description {
+	font-size: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+.image-form-container {
+	margin-top: 10px;
+}
+.image-form-container .left-photo {
+	background: #eee;
+	height: 300px;
+}
+
+.sale {
+	background: #563d7c;
+	margin-top: 10px;
+	color: white;
+}
+
+.sale .title {
+	font-size: 28px;
+	text-align: center;
+}
+
+.triggers {
+	margin-top: 10px;
+}
+
+.triggers .triggers-title {
+	font-size: 24px;
+	text-align: center;
+}
+
+.trigger, .response {
+	text-align: center;
+	height: 50px;
+	border: 1px solid #eee;
+}
+
+.responses {
+	margin-top: 10px;
+}
+
+.responses .responses-title {
+	font-size: 24px;
+	text-align: center;
+}
+
+.footer {
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+	background: #eee;
+}

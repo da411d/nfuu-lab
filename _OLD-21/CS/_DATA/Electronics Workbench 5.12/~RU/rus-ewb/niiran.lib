@@ -1,0 +1,118 @@
+* K140UD20A operational amplifier "macromodel" subcircuit
+* created using Parts release 4.03A on 02/28/92 at 23:08
+*
+* connections:   non-inverting input
+*                | inverting input
+*                | | positive power supply
+*                | | | negative power supply
+*                | | | | output
+*                | | | | |
+.subckt K140UD20A 1 2 3 4 5
+*
+  c1   11 12 2.887E-12
+  c2    6  7 30.00E-12
+  dc    5 53 dx
+  de   54  5 dx
+  dlp  90 91 dx
+  dln  92 90 dx
+  dp    4  3 dx
+  egnd 99  0 poly(2) (3,0) (4,0) 0 .5 .5
+  fb    7 99 poly(5) vb vc ve vlp vln 0 42.44E6 -40E6 40E6 40E6 -40E6
+  ga    6  0 11 12 103.7E-6
+  gcm   0  6 10 99 32.40E-9
+  iee  10  4 dc 9.400E-6
+  hlim 90  0 vlim 1K
+  q1   11  2 13 qx
+  q2   12  1 14 qx
+  r2    6  9 100.0E3
+  rc1   3 11 9.646E3
+  rc2   3 12 9.646E3
+  re1  13 10 3.732E3
+  re2  14 10 3.732E3
+  ree  10 99 21.28E6
+  ro1   8  5 50
+  ro2   7 99 25
+  rp    3  4 10.75E3
+  vb    9  0 dc 0
+  vc    3 53 dc 2
+  ve   54  4 dc 2
+  vlim  7  8 dc 0
+  vlp  91  0 dc 20
+  vln   0 92 dc 20
+.model dx D(Is=800.0E-18)
+.model qx NPN(Is=800.0E-18 Bf=22.50)
+.ends
+* K140UD6A operational amplifier "macromodel" subcircuit
+* created using Parts release 4.03A on 02/28/92 at 23:29
+*
+* connections:   non-inverting input
+*                | inverting input
+*                | | positive power supply
+*                | | | negative power supply
+*                | | | | output
+*                | | | | |
+.subckt K140UD6A 1 2 3 4 5
+*
+  c1   11 12 2.887E-12
+  c2    6  7 30.00E-12
+  dc    5 53 dx
+  de   54  5 dx
+  dlp  90 91 dx
+  dln  92 90 dx
+  dp    4  3 dx
+  egnd 99  0 poly(2) (3,0) (4,0) 0 .5 .5
+  fb    7 99 poly(5) vb vc ve vlp vln 0 12.38E6 -10E6 10E6 10E6 -10E6
+  ga    6  0 11 12 188.5E-6
+  gcm   0  6 10 99 18.85E-9
+  iee  10  4 dc 75.06E-6
+  hlim 90  0 vlim 1K
+  q1   11  2 13 qx
+  q2   12  1 14 qx
+  r2    6  9 100.0E3
+  rc1   3 11 5.305E3
+  rc2   3 12 5.305E3
+  re1  13 10 4.612E3
+  re2  14 10 4.612E3
+  ree  10 99 2.665E6
+  ro1   8  5 30
+  ro2   7 99 30
+  rp    3  4 11.01E3
+  vb    9  0 dc 0
+  vc    3 53 dc 3
+  ve   54  4 dc 3
+  vlim  7  8 dc 0
+  vlp  91  0 dc 25
+  vln   0 92 dc 25
+.model dx D(Is=800.0E-18)
+.model qx NPN(Is=800.0E-18 Bf=1.250E3)
+.ends
+* K521CA1 voltage comparator "macromodel" subcircuit
+* created using Parts version 4.03A on 02/28/92 at 22:36
+*
+* connections:   non-inverting input
+*                | inverting input
+*                | | positive power supply
+*                | | | negative power supply
+*                | | | | open collector output
+*                | | | | |
+.subckt K521CA1  1 2 3 4 5
+*
+  f1    3  9 v1 1
+  iee   7  4 dc 100.0E-6
+  q1    9  2  7 qin
+  q2    8  1  7 qin
+  q3    9  8  3 qmo
+  q4    8  8  3 qmi
+.model qin NPN(Is=800.0E-18 Bf=2)
+.model qmi PNP(Is=800.0E-18 Bf=1002)
+.model qmo PNP(Is=800.0E-18 Bf=1000 Cjc=1E-15 Tr=47.54E-9)
+  e1   10  4  3  9  1
+  v1   10 11 dc 0
+  q5    5 11  4 qoc
+.model qoc NPN(Is=800.0E-18 Bf=258.6 Cjc=1E-15 Tf=7.081E-9 Tr=384.1E-9)
+  dp    4  3 dx
+  rp    3  4 2.527E3
+.model dx  D(Is=800.0E-18)
+*
+.ends
+

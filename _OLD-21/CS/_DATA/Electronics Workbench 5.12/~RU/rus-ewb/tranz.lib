@@ -1,0 +1,9 @@
+.model kt3102a  NPN(Is=5.258f Xti=3 Eg=1.11 Vaf=86 Bf=185.1 Ne=7.428 Ise=28.21n
++               Ikf=.4922 Xtb=1.5 Br=2.713 Nc=2 Isc=21.2p Ikr=.25 Rc=1.65
++               Cjc=9.921p Mjc=.33 Vjc=.65 Fc=.5 Cje=11.3p Mje=.33 Vje=.69
++               Tr=57.71n Tf=611.5p Itf=.52 Vtf=80 Xtf=2)
+.model kt3107a  PNP(Is=6.545f Xti=3 Eg=1.11 Vaf=86.5 Bf=105.5 Ne=8.56 Ise=7.735n
++               Ikf=.1862 Xtb=1.5 Var=32 Br=1.62 Nc=2 Isc=3.35p Ikr=12m Rc=0.71
++               Cjc=12.83p Mjc=.33 Vjc=.65 Fc=.5 Cje=12.59p Mje=.35 Vje=.69
++               Tr=30.5n Tf=477.5p Itf=56m Vtf=35 Xtf=2)
+
