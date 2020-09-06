@@ -1,6 +1,5 @@
-[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![Donations Badge](https://yourdonation.rocks/images/badge.svg)](https://daki.me/sayThanks)
+[![GPL Licence](https://img.shields.io/badge/license-Copyleft-blue)](https://opensource.org/licenses/GPL-3.0/)
+[![Donations Badge](https://img.shields.io/badge/donate-<3-red)](https://daki.me/sayThanks)
 
 # Лаби
 Тут я буду складати свої лаби з НЛТУ. 
@@ -12,3 +11,5 @@
 *Якшошо я 5 варіант*
 
 **UPD 01.09.2018:** Один студент покинув групу. Підгрупи перерозприділили. **Тепер я 2 варіант.**
+
+**UPD 06.09.2020:** Закінчивши бакалаврат, я залив все що залишилось і заархівував репозиторій, остаточно припинивши підтримку.
